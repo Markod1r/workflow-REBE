@@ -1,3 +1,8 @@
+import ProgressSection from "../components/ProgressSection";
+import InsightsSection from "../components/InsightsSection";
+import ToDoList from "../components/ToDoList";
+import Recommendations from "../components/Recommendations";
+
 export default function Dashboard() {
 	return (
 		<main className="flex-1 p-6 bg-gray-100">

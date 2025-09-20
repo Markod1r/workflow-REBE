@@ -1,3 +1,8 @@
+import { MdSpaceDashboard } from "react-icons/md";
+import { FaBarsProgress } from "react-icons/fa6";
+import { MdRecommend } from "react-icons/md";
+import { IoSettingsSharp } from "react-icons/io5";
+
 export default function Sidebar() {
 	return (
 		<aside className="w-64 bg-gray-50 h-screen p-6 border-r">
@@ -5,16 +10,28 @@ export default function Sidebar() {
 			<p className="text-sm text-gray-500 mb-6">v1.0</p>
 			<nav className="space-y-4">
 				<a href="#" className="flex items-center gap-2 text-blue-600 font-medium">
-					<span>🏠</span> Dashboard
+					<span>
+						<MdSpaceDashboard />
+					</span>
+					Dashboard
 				</a>
 				<a href="#" className="flex items-center gap-2 text-gray-600 hover:text-blue-600">
-					<span>📊</span> Progress
+					<span>
+						<FaBarsProgress />
+					</span>
+					Progress
 				</a>
 				<a href="#" className="flex items-center gap-2 text-gray-600 hover:text-blue-600">
-					<span>💡</span> Recommendations
+					<span>
+						<MdRecommend />
+					</span>
+					Recommendations
 				</a>
 				<a href="#" className="flex items-center gap-2 text-gray-600 hover:text-blue-600">
-					<span>⚙️</span> Settings
+					<span>
+						<IoSettingsSharp />
+					</span>
+					Settings
 				</a>
 			</nav>
 		</aside>
