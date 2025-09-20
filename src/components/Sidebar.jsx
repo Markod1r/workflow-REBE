@@ -21,7 +21,7 @@ function Anchor({ to, text, children }) {
 export default function Sidebar() {
 	return (
 		<aside className="w-2xs bg-gray-50 h-screen p-6">
-			<h1 className="text-lg font-bold mb-2">AI Learning Insight</h1>
+			<h1 className="text-lg font-bold mb-2 cursor-pointer">AI Learning Insight</h1>
 			<p className="text-sm text-gray-500 mb-6">v1.0.0</p>
 			<nav className="space-y-4">
 				<Anchor to={"/"} text={"Dashboard"}>

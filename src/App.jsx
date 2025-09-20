@@ -3,6 +3,7 @@ import Sidebar from "./components/Sidebar";
 import Dashboard from "./pages/Dashboard";
 import Progress from "./pages/Progress";
 import { Routes, Route, Outlet } from "react-router";
+import NotFoundPage from "./pages/NotFoundPage";
 
 function Layout() {
 	return (
@@ -22,6 +23,7 @@ export default function App() {
 			<Route path="/progress" element={<Layout />}>
 				<Route index element={<Progress />} />
 			</Route>
+			<Route path="*" element={<NotFoundPage />} />
 		</Routes>
 	);
 }
