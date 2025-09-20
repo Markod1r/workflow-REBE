@@ -1,12 +1,23 @@
 import React from "react";
 import Sidebar from "./components/Sidebar";
 import Dashboard from "./pages/Dashboard";
+import { Routes, Route, Outlet } from "react-router";
 
-export default function App() {
+function Layout() {
 	return (
 		<div className="flex">
 			<Sidebar />
-			<Dashboard />
+			<Outlet />
 		</div>
+	);
+}
+
+export default function App() {
+	return (
+		<Routes>
+			<Route path="/" element={<Layout />}>
+				<Route index element={<Dashboard />} />
+			</Route>
+		</Routes>
 	);
 }
